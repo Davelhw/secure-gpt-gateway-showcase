@@ -51,6 +51,19 @@ GET  /api/admin/rate-limits
 
 Public demo users may not have access to all admin endpoints.
 
+## Endpoint Access Matrix
+
+| Area            | Endpoint                     | Purpose                                                     | Auth Required | Demo Access           |
+| --------------- | ---------------------------- | ----------------------------------------------------------- | ------------- | --------------------- |
+| Authentication  | `POST /api/auth/login`       | Establish a demo session and return caller identity context | No            | Allowed               |
+| User context    | `GET /api/me`                | Return the current authenticated user and role information  | Yes           | Allowed               |
+| Gateway chat    | `POST /api/gateway/chat`     | Submit a controlled AI request through the gateway          | Yes           | Limited               |
+| Usage reporting | `GET /api/usage/summary`     | Review usage and high-level consumption summaries           | Yes           | Allowed               |
+| Audit logs      | `GET /api/audit-logs`        | View governance-relevant request and decision records       | Yes           | Read-only             |
+| Admin providers | `GET /api/admin/providers`   | Review configured provider entries and status metadata      | Yes           | Read-only             |
+| Admin policies  | `POST /api/admin/policies`   | Create or update policy configuration                       | Yes           | Disabled or simulated |
+| Rate limits     | `GET /api/admin/rate-limits` | Review configured rate-limit and quota settings             | Yes           | Read-only             |
+
 ## Example Request and Response Payloads
 
 ### Login
@@ -172,6 +185,66 @@ Response:
   ]
 }
 ```
+
+## Common Error Responses
+
+### 401 Unauthorized
+
+```json
+{
+  "statusCode": 401,
+  "error": "Unauthorized",
+  "message": "Authentication is required for this endpoint."
+}
+```
+
+### 403 Forbidden
+
+```json
+{
+  "statusCode": 403,
+  "error": "Forbidden",
+  "message": "Your role does not have access to this resource."
+}
+```
+
+### 429 Rate Limited
+
+```json
+{
+  "statusCode": 429,
+  "error": "Too Many Requests",
+  "message": "Rate limit exceeded for the current time window."
+}
+```
+
+### 422 Policy Blocked
+
+```json
+{
+  "statusCode": 422,
+  "error": "PolicyBlocked",
+  "message": "The request was blocked by gateway policy.",
+  "decision": "blocked"
+}
+```
+
+### 502 Provider Error
+
+```json
+{
+  "statusCode": 502,
+  "error": "ProviderError",
+  "message": "The upstream AI provider could not complete the request."
+}
+```
+
+## Demo API Notes
+
+- The public demo may use limited real AI calls or simulated provider responses.
+- Admin write actions may be disabled or simulated.
+- Public demo users should not assume every documented endpoint is writable.
+- API examples are illustrative and may be narrower in the public demo.
 
 ## Notes on Safe Public Documentation
 

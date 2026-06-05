@@ -6,6 +6,23 @@ Demo URL: https://secure-gpt.davelhw.com
 
 Demo credentials: To be provided later
 
+## Why I Built This
+
+I initiated Secure GPT Gateway as a practical showcase after observing a familiar pattern: AI capabilities can be adopted quickly, but often without enough control around access, data exposure, cost visibility, auditability, and provider key management.
+
+The goal is not to build another chatbot. The goal is to demonstrate how AI access can be treated as a governed platform capability with the same production engineering concerns that apply elsewhere in backend systems: authentication, authorization, policy enforcement, rate limiting, logging, operational review, and maintainability.
+
+## What This Showcase Demonstrates
+
+- API-first backend design
+- Security-aware architecture
+- Provider abstraction
+- Governance and auditability
+- Rate limiting and quota control
+- Operational maintainability
+- Demo-safe public exposure
+- Clear documentation and technical communication
+
 ## Why This Project Exists
 
 Many teams begin AI adoption by embedding provider API calls directly into internal tools or client-facing applications. That is fast to prototype, but it creates predictable control gaps around authentication, provider key exposure, usage visibility, rate limiting, quota enforcement, auditability, and policy consistency.
@@ -71,6 +88,16 @@ At a high level:
 - [Governance and Maintenance](./docs/05-governance-maintenance.md)
 - [Roadmap](./docs/06-roadmap.md)
 - [Demo Safety Boundaries](./docs/07-demo-safety-boundaries.md)
+- [Reviewer Walkthrough](./docs/08-reviewer-walkthrough.md)
+
+## Reviewer Quick Links
+
+- [Start with Project Background](./docs/01-project-background.md)
+- [Review Architecture Design](./docs/02-architecture-design.md)
+- [Review API Guide](./docs/04-api-guide.md)
+- [Review Governance and Maintenance](./docs/05-governance-maintenance.md)
+- [Review Demo Safety Boundaries](./docs/07-demo-safety-boundaries.md)
+- [Review Reviewer Walkthrough](./docs/08-reviewer-walkthrough.md)
 
 ## Source Code Note
 

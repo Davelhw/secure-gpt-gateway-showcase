@@ -4,7 +4,9 @@
 
 Secure GPT Gateway began as a showcase concept for a common enterprise problem: teams want to use AI services quickly, but direct provider access creates governance and operational risks that become difficult to unwind later.
 
-The project was initiated as a private-source architecture and implementation exercise focused on safe AI adoption. The goal was to demonstrate how a controlled gateway can offer a cleaner operating model than letting every application, service, or user integrate with an AI provider independently.
+I initiated this showcase to demonstrate how I would approach a real-world AI enablement problem from both engineering and governance angles.
+
+The project was initiated as a private-source architecture and implementation exercise focused on safe AI adoption. My goal was to demonstrate how a controlled gateway can offer a cleaner operating model than letting every application, service, or user integrate with an AI provider independently.
 
 ## The Business and Technical Problem
 
@@ -44,6 +46,16 @@ The gateway centralises:
 - Rate limiting and quota control
 - Audit logging and usage tracking
 - Administrative visibility and configuration
+
+## What This Project Is Not
+
+This project is intentionally scoped.
+
+- It is not a public chatbot product.
+- It is not a prompt-sharing playground.
+- It is not a full enterprise AI governance suite.
+- It is not an open-source implementation repo.
+- It is a private-source technical showcase and architecture case study.
 
 ## Who It Can Serve
 
