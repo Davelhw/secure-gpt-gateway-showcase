@@ -23,6 +23,18 @@ The goal is not to build another chatbot. The goal is to demonstrate how AI acce
 - Demo-safe public exposure
 - Clear documentation and technical communication
 
+## Demo Preview
+
+![Secure GPT Gateway demo portal showing login, prompt submission, policy decision, reason codes, and redacted response](./images/secure-gpt-demo-portal.png)
+
+- This screenshot shows the internal control-plane portal.
+- The user logs in.
+- A prompt containing account number, address, and phone-like data is submitted.
+- The gateway detects PII-related signals.
+- The response is allowed with redaction.
+- The result displays the gateway decision, reason codes, correlation ID, and redacted response.
+- This demonstrates deterministic policy enforcement and audit-friendly decision visibility.
+
 ## Why This Project Exists
 
 Many teams begin AI adoption by embedding provider API calls directly into internal tools or client-facing applications. That is fast to prototype, but it creates predictable control gaps around authentication, provider key exposure, usage visibility, rate limiting, quota enforcement, auditability, and policy consistency.

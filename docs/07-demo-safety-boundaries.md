@@ -36,6 +36,13 @@ Destructive actions such as deleting providers, removing audit history, resettin
 
 The demo should avoid retaining full sensitive prompt content. Where logging is needed for illustration, it should be redacted, sanitised, or reduced to metadata-only records.
 
+## Screenshot Data Safety
+
+Public demo screenshots should use synthetic data only.
+
+- No real account numbers, addresses, phone numbers, customer records, provider keys, or tokens should appear in public screenshots.
+- The current screenshot is intended as a synthetic demo case showing PII detection and redaction behaviour.
+
 ## Clear Demo Environment Banner
 
 The user interface should make the environment status explicit with a clear demo banner or notice. Reviewers should understand that some actions are restricted, simulated, or intentionally non-persistent.

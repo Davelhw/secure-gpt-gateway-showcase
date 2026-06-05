@@ -1,6 +1,8 @@
 # Assets
 
-This folder is reserved for future showcase visuals that support the documentation set.
+This folder is reserved for future supporting assets that complement the documentation set.
+
+Current public screenshots are stored under `images/`.
 
 Planned assets include:
 
