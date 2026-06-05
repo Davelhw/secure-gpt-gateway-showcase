@@ -14,10 +14,11 @@ This document is intended to help the following reviewers understand the showcas
 1. Read [README](../README.md) for the project overview.
 2. Read [Project Background](./01-project-background.md) to understand why the project exists.
 3. Read [Architecture Design](./02-architecture-design.md) to understand the gateway pattern.
-4. Read [API Guide](./04-api-guide.md) to understand system boundaries.
-5. Read [Governance and Maintenance](./05-governance-maintenance.md) to understand operational thinking.
-6. Read [Demo Safety Boundaries](./07-demo-safety-boundaries.md) to understand why the public demo is restricted.
-7. Review screenshots or the demo once available.
+4. Read [Design Tradeoffs](./09-design-tradeoffs.md) to understand why the gateway, logging, source-code, and demo-boundary decisions were made.
+5. Read [API Guide](./04-api-guide.md) to understand system boundaries.
+6. Read [Governance and Maintenance](./05-governance-maintenance.md) to understand operational thinking.
+7. Read [Demo Safety Boundaries](./07-demo-safety-boundaries.md) to understand why the public demo is restricted.
+8. Review screenshots or the demo once available.
 
 ## What to Look For
 
@@ -25,6 +26,7 @@ When reviewing this showcase, the most useful signals are:
 
 - Problem framing
 - Architecture clarity
+- Design tradeoff awareness
 - Backend and API thinking
 - Security and governance awareness
 - Operational maintainability

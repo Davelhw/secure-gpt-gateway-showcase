@@ -83,6 +83,7 @@ At a high level:
 
 - [Project Background](./docs/01-project-background.md)
 - [Architecture Design](./docs/02-architecture-design.md)
+- [Design Tradeoffs](./docs/09-design-tradeoffs.md)
 - [Development Lifecycle](./docs/03-development-lifecycle.md)
 - [API Guide](./docs/04-api-guide.md)
 - [Governance and Maintenance](./docs/05-governance-maintenance.md)
@@ -94,6 +95,7 @@ At a high level:
 
 - [Start with Project Background](./docs/01-project-background.md)
 - [Review Architecture Design](./docs/02-architecture-design.md)
+- [Review Design Tradeoffs](./docs/09-design-tradeoffs.md)
 - [Review API Guide](./docs/04-api-guide.md)
 - [Review Governance and Maintenance](./docs/05-governance-maintenance.md)
 - [Review Demo Safety Boundaries](./docs/07-demo-safety-boundaries.md)
